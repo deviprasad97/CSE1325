@@ -1,13 +1,20 @@
-#include <iostream>
-#include <"student.cpp">
+#include<iostream>
 using namespace std;
+#include "student.cpp"
 int main(){
-  Student student{"Bjarne Stroustrup"};
-  student.exam{100.0};
-  student.exam{90.0};
-  student.exam{80.0};
-  student.name();
-  student.average();
-  return 0;
+  string name;
+  short int ctr=0;
+  double grade;
+  cout<<"Enter your name: ";
+  getline(cin, name);
+  Student student{name};
+  do{
+    cout<<"Enter "<<ctr+1<<" grade: ";
+    cin>>grade;
+    ctr++;
+    if(grade>0){
+      student.exam(grade);
+    }
+  }while(grade>0);
+  cout<<student.name()<<" has an average of "<<student.average()<<"\n";
 }
-

@@ -1,6 +1,5 @@
-# Suggested Makefile for CSE_1325 Homework #2
 main: main.cpp student.cpp
-     g++ --std=c++11 -o main main.cpp
+     g++ --std=c+11 -o main main.cpp
      ./main
 test: test_student.cpp student.cpp
      g++ --std=c++11 -o test_student test_student.cpp

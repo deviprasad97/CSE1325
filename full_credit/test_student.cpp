@@ -2,12 +2,12 @@
 using namespace std;
 #include "student.cpp"
 int main(){
-  Student student{"Bjarne Stroustrup"};
-  student.exam(100.0);
-  student.exam(90.0);
-  student.exam(80.0);
-  student.name();
-  student.average();
+  Student nada{"Bjarne Stroustrup"};
+  nada.exam(100.0);
+  nada.exam(90.0);
+  nada.exam(80.0);
+  nada.name();
+  nada.average();
   return 0;
 }
 
